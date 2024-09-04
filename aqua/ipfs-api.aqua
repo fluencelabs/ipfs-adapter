@@ -1,10 +1,15 @@
+aqua IpfsApi declares *
+
+export get_and_cache
+export put, dag_put, dag_get, get_from, dag_get_from, cat_from
+export set_timeout, get_external_api_multiaddr
+export get_external_swarm_multiaddr, get_local_api_multiaddr
+
 import "@fluencelabs/aqua-lib/builtin.aqua"
+
 import "ipfs.aqua"
 
 alias Multiaddr: string
-alias PeerId: string
-alias CID: string
-alias Path: string
 
 -- Download file from remote IPFS node to Fluence node and then
 -- put that file to local IPFS node, effectively caching it on the local IPFS node.
@@ -52,10 +57,29 @@ func put(node: PeerId, path: string) -> IpfsPutResult:
         result <- Ipfs.put(path)
     <- result
 
+-- Upload file `path` as a dag to IPFS node running on `node`
+-- path should exist & be available to `aqua-ipfs`
+func dag_put(node: PeerId, path: string) -> IpfsPutResult:
+    on node:
+        result <- Ipfs.dag_put(path)
+    <- result
+
+-- Returns file path of the dag `cid` from local cache of IPFS node `node`
+func dag_get(node: PeerId, cid: CID) -> IpfsGetResult:
+    on node:
+       result <- Ipfs.dag_get(cid)
+    <- result
+
 -- Download file `cid` from IPFS node `from` and save it to `node`
 func get_from(node: PeerId, cid: CID, from: Multiaddr) -> IpfsGetResult:
     on node:
         result <- Ipfs.get_from(cid, from)
+    <- result
+
+-- Return contents of the dag `cid` from IPFS node `from` and save it to `node`
+func dag_get_from(node: PeerId, cid: CID, from: Multiaddr) -> IpfsGetResult:
+    on node:
+       result <- Ipfs.dag_get_from(cid, from)
     <- result
 
 -- Return contents of the file `cid` from IPFS node `from`

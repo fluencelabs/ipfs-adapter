@@ -1,5 +1,125 @@
 # Changelog
 
+## [0.6.0](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.31...aqua-ipfs-v0.6.0) (2024-02-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Support CallParameters and Particle Vault File Format ([#165](https://github.com/fluencelabs/aqua-ipfs/issues/165))
+
+### Features
+
+* Support CallParameters and Particle Vault File Format ([#165](https://github.com/fluencelabs/aqua-ipfs/issues/165)) ([e3e89cf](https://github.com/fluencelabs/aqua-ipfs/commit/e3e89cf4d0855712ad181894c0cf5668f8798ca5))
+
+## [0.5.31](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.30...aqua-ipfs-v0.5.31) (2024-02-21)
+
+
+### Bug Fixes
+
+* **aqua-lib:** update aqua-lib ([#166](https://github.com/fluencelabs/aqua-ipfs/issues/166)) ([41fbc08](https://github.com/fluencelabs/aqua-ipfs/commit/41fbc08d11e0974b93a7c27209a493516c4fb8a8))
+
+## [0.5.30](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.29...aqua-ipfs-v0.5.30) (2024-01-11)
+
+
+### Bug Fixes
+
+* **aqua-ipfs:** Update example ([#159](https://github.com/fluencelabs/aqua-ipfs/issues/159)) ([32238f1](https://github.com/fluencelabs/aqua-ipfs/commit/32238f18c2df5edfe39a43c051bf4f08d76721f4))
+
+## [0.5.29](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.28...aqua-ipfs-v0.5.29) (2024-01-04)
+
+
+### Features
+
+* **aqua-ipfs:** Use `aqua` keyword instead of `module` ([#153](https://github.com/fluencelabs/aqua-ipfs/issues/153)) ([d973633](https://github.com/fluencelabs/aqua-ipfs/commit/d9736332dcbe7b2389c650157d2c8a84b7386939))
+
+## [0.5.28](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.27...aqua-ipfs-v0.5.28) (2023-12-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fluencelabs/aqua-lib to v0.9.0 ([#139](https://github.com/fluencelabs/aqua-ipfs/issues/139)) ([e5e1e17](https://github.com/fluencelabs/aqua-ipfs/commit/e5e1e170dd8405cc720998e8522969e9248c73fb))
+* **deps:** update dependency @fluencelabs/fluence-network-environment to v1.1.2 ([#113](https://github.com/fluencelabs/aqua-ipfs/issues/113)) ([f184b1f](https://github.com/fluencelabs/aqua-ipfs/commit/f184b1fff68e84a7e987fa0afe56fb231ed62e6d))
+* **deps:** update rust crate marine-rs-sdk-test to 0.12.1 ([#137](https://github.com/fluencelabs/aqua-ipfs/issues/137)) ([b98b9b1](https://github.com/fluencelabs/aqua-ipfs/commit/b98b9b17e28ac61578d4abf5cf5489bfe2a17541))
+
+## [0.5.27](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.26...aqua-ipfs-v0.5.27) (2023-12-26)
+
+
+### Bug Fixes
+
+* add memory limit into distro config ([#135](https://github.com/fluencelabs/aqua-ipfs/issues/135)) ([9994067](https://github.com/fluencelabs/aqua-ipfs/commit/999406708f958374e6ce43673f550e18bf651d80))
+
+## [0.5.26](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.25...aqua-ipfs-v0.5.26) (2023-12-25)
+
+
+### Features
+
+* update marine sdk's and configs ([#122](https://github.com/fluencelabs/aqua-ipfs/issues/122)) ([6db2393](https://github.com/fluencelabs/aqua-ipfs/commit/6db239348299451d5c3f3a2687fe53fae6b922c7))
+
+
+### Bug Fixes
+
+* **build:** fix npm build, add check for that ([#132](https://github.com/fluencelabs/aqua-ipfs/issues/132)) ([e6749d1](https://github.com/fluencelabs/aqua-ipfs/commit/e6749d1f05b1ad4ebf3aa4c3c166758e3288635e))
+* **deps:** rust toolchain 2023-12-06; cargo-workspaces 0.2.44 ([#126](https://github.com/fluencelabs/aqua-ipfs/issues/126)) ([f096a4e](https://github.com/fluencelabs/aqua-ipfs/commit/f096a4efb46d5c24513745c7bea376e88fea9631))
+* **release:** use fcli installer ([#134](https://github.com/fluencelabs/aqua-ipfs/issues/134)) ([812fa12](https://github.com/fluencelabs/aqua-ipfs/commit/812fa12506edca84c12a14dc1547c01182297d56))
+
+## [0.5.25](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.24...aqua-ipfs-v0.5.25) (2023-12-20)
+
+
+### Bug Fixes
+
+* tests ([1d55067](https://github.com/fluencelabs/aqua-ipfs/commit/1d550679653864d5ea8d5951113f258c415a0527))
+* **tests:** update package-lock to fix marine-js not found on fluence run ([#123](https://github.com/fluencelabs/aqua-ipfs/issues/123)) ([1d55067](https://github.com/fluencelabs/aqua-ipfs/commit/1d550679653864d5ea8d5951113f258c415a0527))
+
+## [0.5.24](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.23...aqua-ipfs-v0.5.24) (2023-11-15)
+
+
+### Features
+
+* update toolchain and deps ([#116](https://github.com/fluencelabs/aqua-ipfs/issues/116)) ([b99d790](https://github.com/fluencelabs/aqua-ipfs/commit/b99d790d71f452e3eb00eda39ac3d9cada7f7fb8))
+
+## [0.5.23](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.22...aqua-ipfs-v0.5.23) (2023-11-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fluencelabs/aqua-lib to v0.8.1 ([#114](https://github.com/fluencelabs/aqua-ipfs/issues/114)) ([ddc94ce](https://github.com/fluencelabs/aqua-ipfs/commit/ddc94cea48560d9d3ec79158b126b216eb1a0b29))
+
+## [0.5.22](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.21...aqua-ipfs-v0.5.22) (2023-11-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fluencelabs/aqua-lib to v0.8.0 ([#57](https://github.com/fluencelabs/aqua-ipfs/issues/57)) ([fba3f93](https://github.com/fluencelabs/aqua-ipfs/commit/fba3f93ac49359220d19139579435bc00c402d8a))
+
+## [0.5.21](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.20...aqua-ipfs-v0.5.21) (2023-09-28)
+
+
+### Features
+
+* **aqua-ipfs:** update aqua-lib to 0.7.7 ([#107](https://github.com/fluencelabs/aqua-ipfs/issues/107)) ([49dd30e](https://github.com/fluencelabs/aqua-ipfs/commit/49dd30eec395a416c11a52150409e0402b645365))
+
+## [0.5.20](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.19...aqua-ipfs-v0.5.20) (2023-09-22)
+
+
+### Bug Fixes
+
+* bump distro version ([#105](https://github.com/fluencelabs/aqua-ipfs/issues/105)) ([0c48bec](https://github.com/fluencelabs/aqua-ipfs/commit/0c48bec52ab5cff3259a3f85ec381b5668d954f1))
+
+## [0.5.19](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.18...aqua-ipfs-v0.5.19) (2023-09-22)
+
+
+### Bug Fixes
+
+* **ci:** bump cargo-install version ([9ed3419](https://github.com/fluencelabs/aqua-ipfs/commit/9ed34194fe8515b69f50dfb557ecb9f67c62bb92))
+
+## [0.5.18](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.17...aqua-ipfs-v0.5.18) (2023-09-22)
+
+
+### Features
+
+* allow reconfigure multiaddrs ([#103](https://github.com/fluencelabs/aqua-ipfs/issues/103)) ([d620b14](https://github.com/fluencelabs/aqua-ipfs/commit/d620b148aa5902090b63971f4ddcd3c4adb2183a))
+* support ipfs dag + e2e tests [NET-476] ([#91](https://github.com/fluencelabs/aqua-ipfs/issues/91)) ([1dd30ba](https://github.com/fluencelabs/aqua-ipfs/commit/1dd30ba0ace5f35de7a8db5c71d56c7e167a4de6))
+
 ## [0.5.17](https://github.com/fluencelabs/aqua-ipfs/compare/aqua-ipfs-v0.5.16...aqua-ipfs-v0.5.17) (2023-07-10)
 
 

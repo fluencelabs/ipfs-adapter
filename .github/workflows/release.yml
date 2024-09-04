@@ -59,9 +59,10 @@ jobs:
         uses: actions-rust-lang/setup-rust-toolchain@v1
 
       - name: Install cargo-edit
-        uses: baptiste0928/cargo-install@v1.3.0
+        uses: baptiste0928/cargo-install@v2.0.0
         with:
           crate: cargo-edit
+          version: v0.12.1
 
       - name: Set version in service
         working-directory: service
@@ -123,7 +124,7 @@ jobs:
         uses: baptiste0928/cargo-install@v2.0.0
         with:
           crate: cargo-workspaces
-          version: v0.2.37
+          version: v0.2.44
 
       - name: Setup marine
         uses: fluencelabs/setup-marine@v1
@@ -140,7 +141,12 @@ jobs:
           cache-dependency-path: "aqua/package-lock.json"
           cache: "npm"
 
-      - run: npm i
+      - name: Setup fcli
+        uses: fluencelabs/setup-fluence@v1
+        with:
+          version: stable
+
+      - run: npm ci
         working-directory: aqua
 
       - run: npm run build
