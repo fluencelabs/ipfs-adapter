@@ -6,7 +6,7 @@
     "*.aqua"
   ],
   "dependencies": {
-    "@fluencelabs/aqua-lib": "0.10.1"
+    "@fluencelabs/aqua-lib": "0.12.1"
   },
   "scripts": {
     "generate-aqua": "../service/build.sh",
